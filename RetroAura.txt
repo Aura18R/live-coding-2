@@ -1,0 +1,12 @@
+Iniciaste excelente Aura: 
+ 1. Conocias perfecto lo que había que hacer y lo separaste por pasos
+ 	-Mandar a traer los elementos que necesistas
+ 	-Fetch-
+ 	-TimeOut
+ 	-EventListener
+ 
+Excelente orientacion al detalle al prestar atención a los nombres que pide el ejercicio usar para las funciones. Y respetar los nombres y funciones solicitadas. 
+
+Me gusto mucho como vas haciendo pruebas y te detienes a analizar que necesitas hacer paso por paso. 
+
+Alex Sainz. 

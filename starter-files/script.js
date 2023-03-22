@@ -1,13 +1,30 @@
 // API
 const API_ENDPOINT = 'https://yesno.wtf/api';
 
-/**
- * STEPS:
- *
- * 1. Create a fetchAnswer function and call the API
- * 2. Output the API's response
- * 3. Attach fetchAnswer to an event listener
- * 4. Clear output after 3 seconds
- * 5. Optional: add loading/error states
- *
- */
+const button = document.getElementById('button');
+const div = document.getElementById('answer');
+
+function fetchAnswer(){
+    fetch(API_ENDPOINT)
+    .then(answer => answer.json())
+    .then(data => {
+        div.textContent =data.answer;
+    })
+    setTimeout(function(){
+        div.textContent = "";
+    }, 5000)
+
+}
+
+
+button.addEventListener('click', fetchAnswer);
+
+/*  
+/codigo aqui
+//console.log("Inicio de asincronia");
+setTimeout(function (){
+    console.log("Esta funcion se ejecuta despues de 5 segundos");
+    console.log("Inicio de asincronia");
+    console.log("Fin de asincronismo");
+},5000);
+*/
